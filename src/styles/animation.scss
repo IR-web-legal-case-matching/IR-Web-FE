@@ -1,0 +1,202 @@
+//aniFade
+.aniFade-enter-active{
+  animation: aniFadein 0.3s ease-in;
+}
+.aniFade-leave-active{
+  animation: aniFadeout 0.3s ease-out;
+}
+@keyframes aniFadein {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 100%;
+  }
+}
+@keyframes aniFadeout {
+  from{
+    opacity: 100%;
+  }
+  to{
+    opacity: 0;
+  }
+}
+.aniFadeSwitch-enter-active{
+  animation: aniFadeSwitchin 0.3s ease-in;
+}
+.aniFadeSwitch-leave-active{
+  animation: aniFadeSwitchout 0.3s ease-out;
+  position: absolute;
+}
+@keyframes aniFadeSwitchin {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 100%;
+  }
+}
+@keyframes aniFadeSwitchout {
+  from{
+    opacity: 100%;
+  }
+  to{
+    opacity: 0;
+  }
+}
+
+//aniFadeRotate
+.aniFadeRotate-enter-active{
+  animation: aniFadeRotatein 0.3s ease-in;
+}
+.aniFadeRotate-leave-active{
+  animation: aniFadeRotateout 0.3s ease-out;
+  position: absolute;
+}
+@keyframes aniFadeRotatein {
+  from{
+    rotate: -100deg;
+    opacity: 0;
+    transition: scale(50%);
+  }
+  to{
+    rotate: 0deg;
+    opacity: 100%;
+    transition: scale(100%);
+  }
+}
+@keyframes aniFadeRotateout {
+  from{
+    rotate: 0deg;
+    opacity: 100%;
+    transition: scale(100%);
+  }
+  to{
+    rotate: 100deg;
+    opacity: 0;
+    transition: scale(50%);
+  }
+}
+
+//aniSwitch
+.aniSwitch-enter-active{
+  animation: aniSwitchin 0.25s ease;
+}
+.aniSwitch-leave-active{
+  animation: aniSwitchout 0.25s ease;
+  position: absolute;
+}
+@keyframes aniSwitchin {
+  from{
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+}
+@keyframes aniSwitchout {
+  from{
+    transform: translateX(0px);
+    opacity: 100%;
+  }
+  to{
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+// aniSlide (from left)
+.aniSlide-enter-active{
+  animation: aniSlidein 0.18s ease;
+}
+.aniSlide-leave-active{
+  animation: aniSlidein 0.18s ease reverse;
+}
+@keyframes aniSlidein {
+  from{
+    transform: translateX(-100%);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
+/*
+CLASS-BASED ANIMATIONS
+
+to enable animations, use `:class="{<aniName>: <variable>}"` attribute
+you need to define <variable> breforehand in typescript
+make sure <variable> is modified during the event, and its value is set to `true` 
+*/
+
+// aniShake
+.aniShake {
+  animation: aniShake 0.8s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes aniShake {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(1px, 0, 0);
+  }
+}
+.aniShakeIntense {
+  animation: aniShakeIntense 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+}
+@keyframes aniShakeIntense {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+// aniPressed
+.aniPressed {
+  animation: aniPressed 0.25s ease-in-out;
+}
+@keyframes aniPressed {
+  from, to {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(87%);
+  }
+}
+.aniPressedFade {
+  animation: aniPressedFade 0.28s ease-in-out;
+}
+@keyframes aniPressedFade {
+  from, to {
+    transform: scale(100%);
+    opacity: 100%;
+  }
+  50% {
+    transform: scale(83%);
+    opacity: 45%;
+  }
+}
