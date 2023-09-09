@@ -1,22 +1,17 @@
-### Vite Framework Based on Element+
+### Environment
 
-Requires Vite and Vue3. You're supposed to install node.js beforehand.
+The front-end is developed with **vue3** and **element-plus**.
 
-Forked from [element-plus-vite-starter](https://github.com/element-plus/element-plus-vite-starter).
+Using **Axois** to communicate with back-end server and **mock.js** for local debugging.
+
+You're supposed to have installed **npm** package manager before installation.
+
+If you have **npm**, simply run `npm install` to build the environment.
 
 ### Usage
 
-Run the command below in your terminal.
+Run `npm run server` to start the front-end server.
 
-```
-git clone git@github.com:ce-amtic/vite-framework.git
-cd ./vite-framework
-npm install
-npm run dev
-```
+### Reference
 
-To release, run this command:
-
-```
-npm run build
-```
+See [framework](https://ce-amtic.github.io/vite-framework/#/) to learn about the template.
