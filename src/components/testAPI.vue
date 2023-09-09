@@ -14,6 +14,7 @@
 </template>
 <script lang="ts">
 import axios from 'axios'
+import { ElMessage } from 'element-plus'
 
 export default {
     data() {
@@ -22,28 +23,34 @@ export default {
                 username: '',
                 email: '',
             },
-            results:''
+            results:'',
         }
     },
     methods: {
         onSubmitGet() {
             console.log('submit! get');
-            axios.get('api/users/',).then(res => {//get()中的参数要与mock.js文件中的Mock.mock()配置的路由保持一致
-                // axios.get('http://127.0.0.1:8000/users.json',).then(res => {//get()中的参数要与mock.js文件中的Mock.mock()配置的路由保持一致
-                this.results = JSON.stringify(res.data);
-                console.log(res.data);//在console中看到数据
-            }).catch(res => {
-                alert('wrong');
-            })
+            axios.get('/api/users/',)
+                .then(res => {
+                    //get()中的参数要与mock.js文件中的Mock.mock()配置的路由保持一致
+                    // axios.get('http://127.0.0.1:8000/users.json',).then(res => {//get()中的参数要与mock.js文件中的Mock.mock()配置的路由保持一致
+                    this.results = JSON.stringify(res.data);
+                    console.log(res.data);//在console中看到数据
+                })
+                .catch(() => {
+                    ElMessage.error('Something went wrong')
+                })
         },
         onSubmitPost() {
             console.log('submit! post');
-            axios.post('api/users/',this.formInline).then(res => {//get()中的参数要与mock.js文件中的Mock.mock()配置的路由保持一致
-                // axios.post('http://127.0.0.1:8000/users.json',this.formInline).then(res => {//get()中的参数要与mock.js文件中的Mock.mock()配置的路由保持一致
-                console.log(res.data);//在console中看到数据
-            }).catch(res => {
-                alert('wrong');
-            })
+            axios.post('/api/users/',this.formInline)
+                .then(res => {
+                    //get()中的参数要与mock.js文件中的Mock.mock()配置的路由保持一致
+                    // axios.post('http://127.0.0.1:8000/users.json',this.formInline).then(res => {//get()中的参数要与mock.js文件中的Mock.mock()配置的路由保持一致
+                    console.log(res.data);//在console中看到数据
+                })
+                .catch(() => {
+                    ElMessage.error('Something went wrong')
+                })
         }
     }
 }

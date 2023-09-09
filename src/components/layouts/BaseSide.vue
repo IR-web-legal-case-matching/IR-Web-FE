@@ -15,6 +15,7 @@
         <Examples v-if="route.name=='Examples'"/>
         <Animations v-if="route.name=='Animations'"/>
         <Layout v-if="route.name=='Layout'"/>
+        <Search v-if="route.name=='IR Web'"/>
       </el-icon>
       <template #title>{{ route.name }}</template>
     </el-menu-item>
@@ -53,7 +54,7 @@ import {
   List as Examples,
   Promotion as Animations,
   Grid as Layout,
-  Avatar as Worship,
+  Management as Search,
 } from '@element-plus/icons-vue'
 import { routes } from '~/router'
 import { 

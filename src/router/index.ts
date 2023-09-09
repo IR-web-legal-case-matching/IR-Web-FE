@@ -3,15 +3,15 @@ import Home from "~/view/Home.vue"
 import Examples from "~/view/Examples.vue"
 import Animations from "~/view/Animations.vue"
 import Layout from "~/view/Layout.vue"
-import IRweb from "~/view/IR-web.vue"
+import IRweb from "~/view/IRweb.vue"
 // import Worship from "~/view/Worship.vue"
 
 export const routes = [
+  {path: '/irweb', name: 'IR Web', component: IRweb},
   {path: '/', name: 'Home', component: Home},
   {path: '/examples', name: 'Examples', component: Examples},
   {path: '/animations', name: 'Animations', component: Animations},
   {path: '/layout', name: 'Layout', component: Layout},
-  {path: '/irweb', name: 'IR-web', component: IRweb},
   // {path: '/worship', name: 'Worship', component: Worship},
 ]
 
