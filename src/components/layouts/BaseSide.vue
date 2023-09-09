@@ -78,6 +78,6 @@ const createIcon = (iconName: string) => {
 .el-menu-vertical-demo{
   box-shadow: var(--ep-fill-color-lighter) 7px -5px 5px; 
   z-index: 9;
-  min-width: 64px;
+  width: 64px;
 }
 </style>

@@ -38,8 +38,8 @@ const handleSelect = (key: string, keyPath: string[]) => {
   console.log(key, keyPath)
 }
 
-const appTitle = "Vite Framework Based on Element+"
-const appTitleShorten = "Vite Framework"
+const appTitle = "可信多任务智慧法律系统"
+const appTitleShorten = "智慧法律"
 </script>
 
 <style scoped>
@@ -50,7 +50,7 @@ const appTitleShorten = "Vite Framework"
   justify-content: left;
   box-shadow: var(--ep-text-color-disabled) 0px -2px 10px;
   z-index: 10;  
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Noto Serif SC', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .hidden-sm-and-up {
   height: 60px;
@@ -60,7 +60,7 @@ const appTitleShorten = "Vite Framework"
   font-size: 20px;
   box-shadow: var(--ep-text-color-disabled) 0px -2px 10px;
   z-index: 10;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Noto Serif SC', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .title {
   padding-left: 20px;
@@ -69,16 +69,15 @@ const appTitleShorten = "Vite Framework"
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Noto Serif SC', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .logo-box {
-  height: 100%;
-  width: auto;
+  height: 50%;
   padding-left: 20px;
 }
 .logo-box-sm {
-  height: 100%;
-  padding: 0;
+  height: 50%;
+  padding: 10px;
 }
 .logo {
   height: 100%;

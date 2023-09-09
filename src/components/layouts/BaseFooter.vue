@@ -1,4 +1,5 @@
 <template>
+<div class="footer">
   <el-divider />
   <!--p>© {{ footerMsg.date }} {{ footerMsg.name }}</p-->
   <p style="color: var(--ep-text-color-secondary)">
@@ -19,8 +20,7 @@
        <i class="fa fa-server"></i>
     </a>
   </p>
-  <p>
-  </p>
+</div>
 </template>
 
 <script lang="ts" setup>
@@ -41,4 +41,7 @@ const footerMsg = ref({
 </script>
 
 <style scoped>
+.footer{
+  padding-bottom: 50px;
+}
 </style>

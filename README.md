@@ -10,7 +10,7 @@ If you have **npm**, simply run `npm install` to build the environment.
 
 ### Usage
 
-Run `npm run server` to start the front-end server.
+Run `npm run dev` to start the front-end server.
 
 ### Reference
 

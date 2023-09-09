@@ -1,6 +1,6 @@
 $--colors: (
   "primary": (
-    "base": green,
+    "base": #a23e3e,
   ),
   "success": (
     "base": #21ba45,
@@ -40,3 +40,6 @@ $--colors: (
 
 // custom dark variables
 @use "./dark.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;600;700&display=swap');
+
