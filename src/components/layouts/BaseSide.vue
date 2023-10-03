@@ -9,13 +9,17 @@
     @close="handleClose"
     v-if="!isFold"
   >
-    <el-menu-item v-for="route in routes" :key="route.path" :index="route.path">
+    <el-menu-item 
+    v-for="route in routes" 
+    :key="route.path" 
+    :index="route.path" 
+    :disabled="route.name!=='Home'&&route.name!=='IR Web'">
       <el-icon>
-        <Home v-if="route.name=='Home'"/>
-        <Examples v-if="route.name=='Examples'"/>
-        <Animations v-if="route.name=='Animations'"/>
-        <Layout v-if="route.name=='Layout'"/>
-        <Search v-if="route.name=='IR Web'"/>
+        <Home v-if="route.name==='Home'"/>
+        <Examples v-if="route.name==='Examples'"/>
+        <Animations v-if="route.name==='Animations'"/>
+        <Layout v-if="route.name==='Layout'"/>
+        <Search v-if="route.name==='IR Web'"/>
       </el-icon>
       <template #title>{{ route.name }}</template>
     </el-menu-item>
@@ -79,5 +83,6 @@ const createIcon = (iconName: string) => {
   box-shadow: var(--ep-fill-color-lighter) 7px -5px 5px; 
   z-index: 9;
   width: 64px;
+  height: 100%;
 }
 </style>
