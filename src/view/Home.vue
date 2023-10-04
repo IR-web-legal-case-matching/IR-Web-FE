@@ -7,11 +7,10 @@
       <a href="/" target="_blank">Ref3</a> | 
       <a href="/" target="_blank">Ref4</a>
     </p>
-    <div class="framework">
-      <pre>
-        Welcome to smart legal system!
-        The system has multiple functions...
-      </pre>
+    <br>
+    <div class="mono-font"> 
+      <p>Welcome to smart legal system!</p>
+      <p>The system has multiple functions...</p>
     </div>
   </main>
 </template>
@@ -21,14 +20,9 @@
   text-align: center;
   color: var(--ep-text-color-primary);
 }
-
-.framework {
-  font: consolas;
-  font-size: 18px;
-  text-align: left;
-  width: 30%;
+.mono-font{
+    font-family: 'Fira Code', Courier, monospace;
 }
-
 .centered-home{
     height: 100%;
     display: flex;

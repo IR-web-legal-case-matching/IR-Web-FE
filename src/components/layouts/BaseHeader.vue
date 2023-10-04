@@ -47,7 +47,6 @@ const appTitleShorten = "智慧法律"
   height: 60px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   box-shadow: var(--ep-text-color-disabled) 0px -2px 10px;
   z-index: 10;  
@@ -57,6 +56,7 @@ const appTitleShorten = "智慧法律"
   height: 60px;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 20px;
   box-shadow: var(--ep-text-color-disabled) 0px -2px 10px;
   z-index: 10;
