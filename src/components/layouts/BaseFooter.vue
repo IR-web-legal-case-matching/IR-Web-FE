@@ -39,8 +39,8 @@ const date = new Date()
 const footerMsg = ref({
   date: date.getUTCFullYear(),
   projName: 'Trustworthy Multi-Tasking Smart Legal System',
-  repoLink: 'https://github.com/ce-amtic/vite-framework',
-  serverLink: '',
+  repoLink: 'https://github.com/IR-web-legal-case-matching',
+  serverLink: 'http://49.232.237.126',
   creditName: 'Element+',
   creditLink: 'https://element-plus.org/',
 })

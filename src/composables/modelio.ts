@@ -18,7 +18,7 @@ export const clearInputVar = ref(false)
 export const modelSubmit = () => {
     toggleSearchAnime()
     if(modelInput.value == ''){
-        ElMessage.warning("你总得写点什么")
+        ElMessage.warning("You have to write something.")
         return
     }
     modelStatus.value = 'loading'
