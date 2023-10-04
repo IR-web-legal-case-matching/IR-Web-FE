@@ -16,9 +16,10 @@ import {
 
 const pathSrc = path.resolve(__dirname, 'src')
 
+// BEFORE RUN BUILD: REMEBER TO CHANGE THE DIRECTION !!!
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/vite-framework/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/IR-Web-FE/' : '/',
   server: {
     host: '0.0.0.0',
     // port: 8080,
